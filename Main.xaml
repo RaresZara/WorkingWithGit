@@ -87,7 +87,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Arrays" sap:VirtualizedContainerService.HintSize="468,648" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Arrays" sap:VirtualizedContainerService.HintSize="468,798" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="s:String[]" Name="stringArray" />
       </Sequence.Variables>
@@ -113,7 +113,8 @@
           <InArgument x:TypeArguments="x:String">Jane</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:LogMessage DisplayName="Log Message Join" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[string.Join(&quot; &quot;, stringArray)]" />
+      <ui:LogMessage DisplayName="Log Message Join" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[string.Join(&quot; &quot;, stringArray)]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Added this text&quot;]" />
     </Sequence>
   </Sequence>
 </Activity>
