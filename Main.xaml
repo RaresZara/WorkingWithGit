@@ -81,13 +81,13 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1128,671" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1128,844" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Arrays" sap:VirtualizedContainerService.HintSize="468,798" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Arrays" sap:VirtualizedContainerService.HintSize="468,821" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="s:String[]" Name="stringArray" />
       </Sequence.Variables>
@@ -104,13 +104,13 @@
           <InArgument x:TypeArguments="s:String[]">[{"Michael", "Doe"}]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:LogMessage DisplayName="Log Message - concatenation of strings" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[stringArray(0) + &quot; &quot; + stringArray(1)]" />
+      <ui:LogMessage DisplayName="Log Message - concatenation of strings" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Fatal" Message="[stringArray(0) + &quot; &quot; + stringArray(1)]" />
       <Assign DisplayName="Assign - modify first element" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[stringArray(0)]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">Jane</InArgument>
+          <InArgument x:TypeArguments="x:String">Timothy</InArgument>
         </Assign.Value>
       </Assign>
       <ui:LogMessage DisplayName="Log Message Join" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[string.Join(&quot; &quot;, stringArray)]" />
